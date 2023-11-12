@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (time >= 175000 && !gameOver)
+        if (time >= 180.0f && !gameOver)
         {
             gameOver = true;
             GameOver();
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
 
     public void CountTime()
     {
-        time += Time.deltaTime * 1000;
+        time += Time.deltaTime;
     }
 
     private void GameOver()
